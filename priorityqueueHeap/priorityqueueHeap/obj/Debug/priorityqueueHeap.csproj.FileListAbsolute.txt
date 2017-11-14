@@ -1,0 +1,6 @@
+E:\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.exe.config
+E:\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.exe
+E:\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.pdb
+E:\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.csprojResolveAssemblyReference.cache
+E:\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.exe
+E:\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.pdb

@@ -1,0 +1,6 @@
+E:\DS\Heap\Heap\bin\Debug\Heap.exe.config
+E:\DS\Heap\Heap\bin\Debug\Heap.exe
+E:\DS\Heap\Heap\bin\Debug\Heap.pdb
+E:\DS\Heap\Heap\obj\Debug\Heap.csprojResolveAssemblyReference.cache
+E:\DS\Heap\Heap\obj\Debug\Heap.exe
+E:\DS\Heap\Heap\obj\Debug\Heap.pdb
