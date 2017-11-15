@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace priorityqueueHeap
 {
-
+    ////Works with only int values
     //class Program
     //{
 
@@ -177,6 +177,8 @@ namespace priorityqueueHeap
 
     //}
 
+
+    ////works with generic type Item 
     public class Item
     {
         public char vertex;
@@ -189,22 +191,22 @@ namespace priorityqueueHeap
         }
     }
 
-    class Program
+    public class PriorityQueue
     {
-        static Item[] arr = null;
+        public static Item[] arr = null;
         static void Main(string[] args)
         {
             var input = new int[] { 1, 4, 3, 7, 8, 9, 10, 2, 5 };
             //var input = new char[] { '1', '4', '3', '7', '8', '9', '2', '5' };
             arr = new Item[input.Count()];
-            for (int i = 0; i < arr.Count();i++ )
+            for (int i = 0; i < arr.Count(); i++)
             {
                 arr[i] = new Item('A', input[i]);
             }
-                //heapMinsort(arr);
-                buildminHeap(arr);
-            Console.WriteLine("Extracted minimum is " + extractMinimum());
-            Console.WriteLine("Extracted minimum is " + extractMinimum());
+            //heapMinsort(arr);
+            buildminHeap(arr);
+            Console.WriteLine("Extracted minimum is " + extractMinimum().key);
+            Console.WriteLine("Extracted minimum is " + extractMinimum().key);
             //heapMinsort(arr);
             arr[5].vertex = 'F';
             decreaseValue(arr[5], 1);
@@ -212,7 +214,7 @@ namespace priorityqueueHeap
             Console.ReadLine();
         }
 
-        static void heapMinsort(Item[] arr)
+        public static void heapMinsort(Item[] arr)
         {
             int size = arr.Count() - 1;
             buildminHeap(arr);
@@ -224,15 +226,16 @@ namespace priorityqueueHeap
             }
         }
 
-      
-        static void buildminHeap(Item[] arr)
+
+        public static void buildminHeap(Item[] input)
         {
-            for (int i = (arr.Count() - 1) / 2; i >= 0; i--)
+            arr = input;
+            for (int i = (input.Count() - 1) / 2; i >= 0; i--)
             {
-                minheapify(arr, i, arr.Count() - 1);
+                minheapify(input, i, input.Count() - 1);
             }
         }
-        static void minheapify(Item[] arr, int i, int n)
+        public static void minheapify(Item[] arr, int i, int n)
         {
             int left = 2 * i + 1;
             int right = (2 * i) + 2;
@@ -256,29 +259,36 @@ namespace priorityqueueHeap
                 minheapify(arr, smallest, n);
             }
         }
-        static void swap(Item[] arr, int a, int b)
+        public static void swap(Item[] arr, int a, int b)
         {
             var temp = arr[a];
             arr[a] = arr[b];
             arr[b] = temp;
         }
 
-        static Item minimum()
+        public static Item minimum()
         {
             return arr[0];
         }
 
-        static Item extractMinimum()
+        public static Item extractMinimum()
         {
-            Item minimum = null;
-            minimum = arr[0];
-            arr[0] = arr.Last();
-            Array.Resize(ref arr, arr.Count() - 1);
-            minheapify(arr,0,arr.Count()-1);
-            return minimum;
+            if (arr != null)
+            {
+                if (arr.Count() > 0)
+                {
+                    Item minimum = null;
+                    minimum = arr[0];
+                    arr[0] = arr.Last();
+                    Array.Resize(ref arr, arr.Count() - 1);
+                    minheapify(arr, 0, arr.Count() - 1);
+                    return minimum;
+                }
+            }
+            return null;
         }
 
-        static void decreaseValue(Item item, int val)
+        public static void decreaseValue(Item item, int val)
         {
             int i = findIndex(item);
             if (i != -1)
@@ -295,16 +305,28 @@ namespace priorityqueueHeap
             }
         }
 
-        static int findIndex(Item item)
+        public static int findIndex(Item item)
         {
-            for(int i=0; i<arr.Count();i++)
+            for (int i = 0; i < arr.Count(); i++)
             {
-                if(arr[i].vertex==item.vertex)
+                if (arr[i].vertex == item.vertex)
                 {
                     return i;
                 }
             }
             return -1;
+        }
+
+        public static Item findItem(char vertex)
+        {
+            for (int i = 0; i < arr.Count(); i++)
+            {
+                if (arr[i].vertex == vertex)
+                {
+                    return arr[i];
+                }
+            }
+            return null;
         }
     }
 }

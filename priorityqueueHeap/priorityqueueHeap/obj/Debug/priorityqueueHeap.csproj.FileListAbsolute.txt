@@ -4,3 +4,9 @@ E:\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.pdb
 E:\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.csprojResolveAssemblyReference.cache
 E:\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.exe
 E:\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.pdb
+E:\WorkSpace\Git-DS\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.exe.config
+E:\WorkSpace\Git-DS\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.exe
+E:\WorkSpace\Git-DS\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.pdb
+E:\WorkSpace\Git-DS\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.exe
+E:\WorkSpace\Git-DS\DS\priorityqueueHeap\priorityqueueHeap\bin\Debug\priorityqueueHeap.pdb
+E:\WorkSpace\Git-DS\DS\priorityqueueHeap\priorityqueueHeap\obj\Debug\priorityqueueHeap.csprojResolveAssemblyReference.cache
